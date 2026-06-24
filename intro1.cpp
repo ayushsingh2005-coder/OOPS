@@ -45,7 +45,6 @@ so there was problem in exisiting paradigm
 // CONSTRUCTOR
 
 // Constructor kya karta hai?
-// Object bante hi kuch initial values deni ho:
 
 // Is it true that a constructor helps in creating an object?
 // Yes, in an interview we can say that constructors help in object creation, but technically they initialize the object after memory is allocated.
@@ -68,7 +67,8 @@ using namespace std;
 
 class Student{
     public:
-    // attributes of class 
+    // attributes of class (data members)
+    // Attributes object ki characteristics/properties/state hoti hain.
     int id;
     int age;
     string name;
@@ -89,7 +89,17 @@ class Student{
         this->nos = nos;
     }
 
-    // Behaviour/methods/functions 
+    // 3.COPY CONSTRUCTOR
+    Student(const Student &srcobj)//srcobj signifies  A
+    {
+        cout << "student COPY ctor called" <<endl;
+        this->id = srcobj.id;
+        this->age = srcobj.age;
+        this->name = srcobj.name;
+        this->nos = srcobj.nos;
+    }
+
+    // Behaviour/methods/member functions 
     void study(){
         cout <<this->name<< "Studying "<<endl;
     }
@@ -99,6 +109,7 @@ class Student{
     void bunk(){
         cout << this->name << "bunking" <<endl;
     }
+
 
     // DESTRUCTOR 
     ~Student(){
@@ -126,8 +137,30 @@ int main(){
     // B.study();
 
     //WAY 2 : 
-    Student A(1,15,"hiii" , 6);
-    Student B(1,15,"hiii" , 6);
+    // Student A(1,15,"hiii" , 6); //this object is defined in stack
+
+    // Student B(1,15,"hiii" , 6);
+
+    // cout << A.name << endl;
+
+    // Copy constructor
+    // Student C = A; //A goes as parameter to C
+
+    // OR  
+
+    // Student C(A); //it is valid  too 
+
+    // cout << C.name << " " << A.name <<endl;
+
+    //DYNAMIC MEMORY ALLOCATION or student pointer
+    Student* A = new Student(1,14,"heyy" ,6);
+    // this get created in heap memory
+
+    cout<<A->name << endl;
+    cout<<A->age <<endl;
+    A->study();
+
+     delete A; //when we allocate memory dynamically we need to free space manually otherwise memory leak would be possible
 
     return 0;
 }
