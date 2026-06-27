@@ -3,6 +3,10 @@ ENCAPSULATION :
 -it binds the data and methods in a class
 -Like a capsule , it combines and binds them together.
 
+but the above statment is half concept, the correct one is written below : 
+
+Encapsulation means bundling the data and the functions that operate on that data into one class, and controlling how that data can be accessed or modified.
+
 2.Functions of Encapsulation
 - provide a secure layer
 - hides internal implementation of code and data in a class
