@@ -28,14 +28,3 @@
 // **Protected Data member : are accessible within the class and to its derived class unlike private which are accessible within the class but not to its derived class
 
 // ** REMEMBER : MODE OF INHERITANCE only exist in C++ not in java . os learn about this specifically
-
-#include<bits/stdc++.h>
-using namespace std;
-
-class Solution{
-
-};
-
-int main(){
-    return 0;
-}
