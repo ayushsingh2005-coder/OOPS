@@ -1,6 +1,6 @@
-// OOPS : Object-Orinted Programming System
+//* OOPS : Object-Orinted Programming System
 
-// oops was developed because of limitations were discovered in earlier approaches to programming 
+//* oops was developed because of limitations were discovered in earlier approaches to programming 
 /*
 Why OOPS Was Introduced(OOPS was developed to overcome the limitations of procedural programming)
 1. Data Security (Encapsulation)
@@ -19,7 +19,7 @@ DRAWBACKS of FUNCTIONAL / PROCEDURAL PROGRAMMING
 so there was problem in exisiting paradigm 
 */
 
-// WHAT IS OOPS
+//* WHAT IS OOPS
 // "Object-Oriented Programming (OOP) is a programming paradigm that focuses on implementing real-world entities as objects. It organizes data and behavior into classes and objects, making programs more modular, reusable, and maintainable."
 
 // A programming style , involves dividing a program into pieces of objects that can communicate with each other .
@@ -28,37 +28,37 @@ so there was problem in exisiting paradigm
 // OOPS promotes modularity by encapsulating data and behaviour within objects.this modular approach enhances code resusability and maintainbility as objects can be reused in different parts of the program.
 
 
-// CLASS : it is a blueprint or template of real world entity stating how real world entity gonna look like .
-// OBJECTS : it is an instance of class.
+//**  CLASS : it is a blueprint or template of real world entity stating how real world entity gonna look like .
+//**  OBJECTS : it is an instance of class.
 
-// ATTRIBUTES : are the properties or state of an object.
-// BEHAVIOUR : are methods/functions that an object can performs.
+//* ATTRIBUTES : are the properties or state of an object.
+//* BEHAVIOUR : are methods/functions that an object can performs.
 
 //////////////////////////////////////////
-// How to create an object in C++ 
+//* How to create an object in C++ 
 
 // To do so , we must define some blue print i.e Class
 // then create the instance of a class(i.e object)
 
 // =============================================
 
-// CONSTRUCTOR
+//* CONSTRUCTOR
 
-// Constructor kya karta hai?
+//* Constructor kya karta hai?
 
 // Is it true that a constructor helps in creating an object?
 // Yes, in an interview we can say that constructors help in object creation, but technically they initialize the object after memory is allocated.
 
-// a constructor is called when an object is being created while destructor is called when object is being destroyed
+//* a constructor is called when an object is being created while destructor is called when object is being destroyed
 
-//==== Types of Constructors ====
+//*==== Types of Constructors ====
 // 1.DEFAULT CONSTRUCTOR : No parameters
 // 2.Parameterized Constructor : takes parameter
 // 3.Copy Constructor : Ek object se dusre object ko initialize karta hai
 
 // =============================================
 
-// THIS Keyword
+//* THIS Keyword
 // this is a special pointer that stores the address of the current object and is used to access the current object's members.
 
 #include<iostream>

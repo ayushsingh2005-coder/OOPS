@@ -1,6 +1,6 @@
 // IMPLEMENTATION OF perfect encapsulation AND setter AND getter functions
 
-// PEREFECT ENCAPSULATION REFERS TO when all the attributes are private or hidden.
+//* PEREFECT ENCAPSULATION REFERS TO when all the attributes are private or hidden.
 
 #include<iostream>
 #include<string>
